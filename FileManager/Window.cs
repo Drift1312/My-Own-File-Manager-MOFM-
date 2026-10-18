@@ -15,12 +15,19 @@ namespace FileManager
             Console.WriteLine("My Own File Manager");
             Console.WriteLine("VIEW MODE");
             Console.WriteLine("------------------------------------------------------------");
+            Console.WriteLine("-------------------------FOLDERS----------------------------");
+            for (int i = 0; i < dirsDir.Length; i++)
+            {
+                Console.WriteLine((i + 1) + " " + dirsDir[i]);
+            }
+            Console.WriteLine("--------------------------FILES-----------------------------");
             for (int i = 0; i < filesDir.Length; i++)
             {
                 Console.WriteLine((i + 1) + " " + filesDir[i]);
             }
             Console.WriteLine("------------------------------------------------------------");
-        } 
+            Console.WriteLine("------------------------------------------------------------");
+        }
     }
     class CommandInput
     {
@@ -29,23 +36,27 @@ namespace FileManager
         {
             userInp = s;
         }
+        
         public void DoCommand()
         {
+            Commander com = new Commander(); // Объект класса для взаимодействия с командами
             switch (userInp)
             {
                 case "cd":
-                    Console.Write("Смена директории: ");
-                    string changedDirectory = Console.ReadLine();
-                    Directory dirCh11 = new Directory(changedDirectory);
-                    ShowWindow dirCh12 = new ShowWindow(changedDirectory);
-                    dirCh12.Print();
+                    com.ChangeDirectory();
                     break;
                 case "help":
-                    MessageBox.Show("help - окно с командами" + "\n" +
-                        "cd - смена директории");
+                    com.HelpMessage();
+                    break;
+                case "clear":
+                    com.Clear();
+                    break;
+                case "showlast":
+                    com.ShowLast();
                     break;
                 default:
-                    Console.WriteLine("Не та комманда");
+                    com.Clear();
+                    com.ShowLast();
                     break;
             }
         }

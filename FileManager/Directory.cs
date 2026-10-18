@@ -6,19 +6,17 @@ using System.Runtime.ExceptionServices;
 
 namespace FileManager
 {
-    // Данные о директории. По умолчанию при старте директория C:\
-    class Directory 
+    // Данные о директории.
+    class Directory
     {
-        protected string directPath; // Путь к директории, хранящийся в виде строки
         DirectoryInfo direct; // Объект для взаимодействия с директорией
-        protected FileInfo[] filesDir; // Массив
-        public Directory(string s = @"C:\") // Конструктор класса
+        protected FileInfo[] filesDir; // Массив из файлов
+        protected DirectoryInfo[] dirsDir; // Массив из папок
+        public Directory(string s) // Конструктор класса
         {
-            directPath = s;
-            direct = new DirectoryInfo(directPath);
+            direct = new DirectoryInfo(s);
             filesDir = direct.GetFiles();
+            dirsDir = direct.GetDirectories();
         }
-
     }
-    
 }
