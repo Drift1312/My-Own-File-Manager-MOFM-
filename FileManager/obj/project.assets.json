@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Программирование\\С#\\FileManager\\FileManager\\FileManager.csproj",
+      "projectUniqueName": "D:\\Программирование\\С#\\My-Own-File-Manager-MOFM-\\FileManager\\FileManager.csproj",
       "projectName": "FileManager",
-      "projectPath": "D:\\Программирование\\С#\\FileManager\\FileManager\\FileManager.csproj",
+      "projectPath": "D:\\Программирование\\С#\\My-Own-File-Manager-MOFM-\\FileManager\\FileManager.csproj",
       "packagesPath": "C:\\Users\\konst\\.nuget\\packages\\",
-      "outputPath": "D:\\Программирование\\С#\\FileManager\\FileManager\\obj\\",
+      "outputPath": "D:\\Программирование\\С#\\My-Own-File-Manager-MOFM-\\FileManager\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
