@@ -6,8 +6,8 @@ namespace FileManager
     {
         static void Main()
         {
-            Directory obj = new Directory(@"C:\");
-            ShowWindow window = new ShowWindow(@"C:\");
+            Directory obj = new Directory();
+            ShowWindow window = new ShowWindow();
             window.Print();
             UserInput();
         }

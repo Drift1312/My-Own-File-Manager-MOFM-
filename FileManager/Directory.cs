@@ -12,7 +12,7 @@ namespace FileManager
         DirectoryInfo direct; // Объект для взаимодействия с директорией
         protected FileInfo[] filesDir; // Массив из файлов
         protected DirectoryInfo[] dirsDir; // Массив из папок
-        public Directory(string s) // Конструктор класса
+        public Directory(string s = @"C:\") // Конструктор класса
         {
             direct = new DirectoryInfo(s);
             filesDir = direct.GetFiles();

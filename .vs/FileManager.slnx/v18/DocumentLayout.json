@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\\u0421#\\My-Own-File-Manager-MOFM-\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B9FD283C-4597-B89A-5524-1E02DEEBEF54}|FileManager\\FileManager.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\\u0441#\\my-own-file-manager-mofm-\\filemanager\\window.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9FD283C-4597-B89A-5524-1E02DEEBEF54}|FileManager\\FileManager.csproj|solutionrelative:filemanager\\window.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B9FD283C-4597-B89A-5524-1E02DEEBEF54}|FileManager\\FileManager.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\\u0441#\\my-own-file-manager-mofm-\\filemanager\\commands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B9FD283C-4597-B89A-5524-1E02DEEBEF54}|FileManager\\FileManager.csproj|solutionrelative:filemanager\\commands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9FD283C-4597-B89A-5524-1E02DEEBEF54}|FileManager\\FileManager.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\\u0441#\\my-own-file-manager-mofm-\\filemanager\\directory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9FD283C-4597-B89A-5524-1E02DEEBEF54}|FileManager\\FileManager.csproj|solutionrelative:filemanager\\directory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9FD283C-4597-B89A-5524-1E02DEEBEF54}|FileManager\\FileManager.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\\u0441#\\my-own-file-manager-mofm-\\filemanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9FD283C-4597-B89A-5524-1E02DEEBEF54}|FileManager\\FileManager.csproj|solutionrelative:filemanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,17 +26,56 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Directory.cs",
+              "DocumentMoniker": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\\u0421#\\My-Own-File-Manager-MOFM-\\FileManager\\Directory.cs",
+              "RelativeDocumentMoniker": "FileManager\\Directory.cs",
+              "ToolTip": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\\u0421#\\My-Own-File-Manager-MOFM-\\FileManager\\Directory.cs",
+              "RelativeToolTip": "FileManager\\Directory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-20T14:12:28.762Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\\u0421#\\My-Own-File-Manager-MOFM-\\FileManager\\Program.cs",
+              "RelativeDocumentMoniker": "FileManager\\Program.cs",
+              "ToolTip": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\\u0421#\\My-Own-File-Manager-MOFM-\\FileManager\\Program.cs",
+              "RelativeToolTip": "FileManager\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-19T19:17:44.456Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Window.cs",
+              "DocumentMoniker": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\\u0421#\\My-Own-File-Manager-MOFM-\\FileManager\\Window.cs",
+              "RelativeDocumentMoniker": "FileManager\\Window.cs",
+              "ToolTip": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\\u0421#\\My-Own-File-Manager-MOFM-\\FileManager\\Window.cs",
+              "RelativeToolTip": "FileManager\\Window.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEUAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-19T19:17:43.213Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Commands.cs",
               "DocumentMoniker": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\\u0421#\\My-Own-File-Manager-MOFM-\\FileManager\\Commands.cs",
               "RelativeDocumentMoniker": "FileManager\\Commands.cs",
               "ToolTip": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\\u0421#\\My-Own-File-Manager-MOFM-\\FileManager\\Commands.cs",
               "RelativeToolTip": "FileManager\\Commands.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAIwEoAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-19T14:10:45.129Z",
               "EditorCaption": ""

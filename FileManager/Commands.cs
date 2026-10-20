@@ -11,10 +11,15 @@ namespace FileManager
         void HelpMessage();
         void Clear();
         void ShowLast();
+        void ShowFiles();
+        void ShowFolders();
+        void ShowAll();
     }
     class Commander : Commands
     {
         static string LastDirect = @"C:\";
+        Directory dirCh = new Directory();
+        ShowWindow dirCh1 = new ShowWindow();
         // Поменять директорию
         public void ChangeDirectory()
         {
@@ -26,11 +31,11 @@ namespace FileManager
             }
             else
             {
-                Directory dirCh11 = new Directory(changedDirectory);
-                ShowWindow dirCh12 = new ShowWindow(changedDirectory);
+                dirCh = new Directory(changedDirectory);
+                dirCh1 = new ShowWindow(changedDirectory);
                 LastDirect = changedDirectory;
                 Console.Clear();
-                dirCh12.Print();
+                dirCh1.Print(true, false, false);
             }
         }
         // Вывести сообщение с командами
@@ -39,7 +44,10 @@ namespace FileManager
             MessageBox.Show("help - окно с командами" + "\n" +
                         "cd - смена директории" + "\n" +
                         "clear - очистить экран" + "\n" +
-                        "showlast - показать последний каталог");
+                        "showlast - показать последний каталог" + "\n" +
+                        "showfiles - показать только файлы" + "\n" +
+                        "showfolders - показать только папки" + "\n" +
+                        "showall - показать и файлы, и папки");
         }
         // Очистить весь экран
         public void Clear()
@@ -50,9 +58,33 @@ namespace FileManager
         public void ShowLast()
         {
             Console.Clear();
-            Directory dirCh21 = new Directory(LastDirect);
-            ShowWindow dirCh22 = new ShowWindow(LastDirect);
-            dirCh22.Print();
+            dirCh = new Directory(LastDirect);
+            dirCh1 = new ShowWindow(LastDirect);
+            dirCh1.Print();
+        }
+        // Показать ТОЛЬКО ФАЙЛЫ
+        public void ShowFiles()
+        {
+            Console.Clear();
+            dirCh = new Directory(LastDirect);
+            dirCh1 = new ShowWindow(LastDirect);
+            dirCh1.Print(false, true, false);
+        }
+        // Показать ТОЛЬКО ПАПКИ
+        public void ShowFolders()
+        {
+            Console.Clear();
+            dirCh = new Directory(LastDirect);
+            dirCh1 = new ShowWindow(LastDirect);
+            dirCh1.Print(false, false, true);
+        }
+        // Показать И ФАЙЛЫ, И ПАПКИ
+        public void ShowAll()
+        {
+            Console.Clear();
+            dirCh = new Directory(LastDirect);
+            dirCh1 = new ShowWindow(LastDirect);
+            dirCh1.Print(true, true, true);
         }
     }
 }

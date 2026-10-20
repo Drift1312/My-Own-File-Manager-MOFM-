@@ -8,24 +8,36 @@ namespace FileManager
     // Вывод информации на экран
     class ShowWindow : Directory
     {
-        public ShowWindow(string s) : base(s) { } // Принимает путь директории от class Directory
-        public void Print()
+        public ShowWindow(string s = @"C:\") : base(s) { } // Принимает путь директории от class Directory
+        private static bool showAllWindow = true; // Показывать И ПАПКИ, И ФАЙЛЫ
+        private static bool showFilesWindow = false; // Показывать ТОЛЬКО ФАЙЛЫ
+        private static bool showFoldersWindow = false; // Показывать ТОЛЬКО ПАПКИ
+        // Вывод директории на экран
+        public void Print(bool showAllWindow = true, bool showFilesWindow = false, bool showFoldersWindow = false)
         {
             Console.Clear();
             Console.WriteLine("My Own File Manager");
             Console.WriteLine("VIEW MODE");
             Console.WriteLine("------------------------------------------------------------");
-            Console.WriteLine("-------------------------FOLDERS----------------------------");
-            for (int i = 0; i < dirsDir.Length; i++)
+            if (showAllWindow == true || (showFoldersWindow == true && showFilesWindow == false))
             {
-                Console.WriteLine((i + 1) + " " + dirsDir[i]);
+                Console.WriteLine("-------------------------FOLDERS----------------------------");
+                for (int i = 0; i < dirsDir.Length; i++)
+                {
+                    Console.WriteLine((i + 1) + " " + dirsDir[i]);
+                }
+                Console.WriteLine("------------------------------------------------------------");
             }
-            Console.WriteLine("--------------------------FILES-----------------------------");
-            for (int i = 0; i < filesDir.Length; i++)
+            if (showAllWindow == true || (showFoldersWindow == false && showFilesWindow == true))
             {
-                Console.WriteLine((i + 1) + " " + filesDir[i]);
+                Console.WriteLine("--------------------------FILES-----------------------------");
+                for (int i = 0; i < filesDir.Length; i++)
+                {
+                    Console.WriteLine((i + 1) + " " + filesDir[i]);
+                }
+                Console.WriteLine("------------------------------------------------------------");
+                
             }
-            Console.WriteLine("------------------------------------------------------------");
             Console.WriteLine("------------------------------------------------------------");
         }
     }
@@ -36,7 +48,7 @@ namespace FileManager
         {
             userInp = s;
         }
-        
+        // Выполнить команду пользователя
         public void DoCommand()
         {
             Commander com = new Commander(); // Объект класса для взаимодействия с командами
@@ -53,6 +65,15 @@ namespace FileManager
                     break;
                 case "showlast":
                     com.ShowLast();
+                    break;
+                case "showfiles":
+                    com.ShowFiles();
+                    break;
+                case "showfolders":
+                    com.ShowFolders();
+                    break;
+                case "showall":
+                    com.ShowAll();
                     break;
                 default:
                     com.Clear();
