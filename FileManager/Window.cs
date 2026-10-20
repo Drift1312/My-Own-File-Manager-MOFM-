@@ -9,9 +9,7 @@ namespace FileManager
     class ShowWindow : Directory
     {
         public ShowWindow(string s = @"C:\") : base(s) { } // Принимает путь директории от class Directory
-        private static bool showAllWindow = true; // Показывать И ПАПКИ, И ФАЙЛЫ
-        private static bool showFilesWindow = false; // Показывать ТОЛЬКО ФАЙЛЫ
-        private static bool showFoldersWindow = false; // Показывать ТОЛЬКО ПАПКИ
+
         // Вывод директории на экран
         public void Print(bool showAllWindow = true, bool showFilesWindow = false, bool showFoldersWindow = false)
         {
@@ -19,21 +17,21 @@ namespace FileManager
             Console.WriteLine("My Own File Manager");
             Console.WriteLine("VIEW MODE");
             Console.WriteLine("------------------------------------------------------------");
-            if (showAllWindow == true || (showFoldersWindow == true && showFilesWindow == false))
+            if (showAllWindow || showFoldersWindow)
             {
                 Console.WriteLine("-------------------------FOLDERS----------------------------");
                 for (int i = 0; i < dirsDir.Length; i++)
                 {
-                    Console.WriteLine((i + 1) + " " + dirsDir[i]);
+                    Console.WriteLine((i + 1) + ". " + dirsDir[i].FullName);
                 }
                 Console.WriteLine("------------------------------------------------------------");
             }
-            if (showAllWindow == true || (showFoldersWindow == false && showFilesWindow == true))
+            if (showAllWindow || showFilesWindow)
             {
                 Console.WriteLine("--------------------------FILES-----------------------------");
                 for (int i = 0; i < filesDir.Length; i++)
                 {
-                    Console.WriteLine((i + 1) + " " + filesDir[i]);
+                    Console.WriteLine((i + 1) + ". " + filesDir[i].FullName);
                 }
                 Console.WriteLine("------------------------------------------------------------");
                 

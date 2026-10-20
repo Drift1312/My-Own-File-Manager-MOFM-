@@ -31,10 +31,8 @@ namespace FileManager
             }
             else
             {
-                dirCh = new Directory(changedDirectory);
-                dirCh1 = new ShowWindow(changedDirectory);
                 LastDirect = changedDirectory;
-                Console.Clear();
+                dirCh1 = new ShowWindow(changedDirectory);
                 dirCh1.Print(true, false, false);
             }
         }
@@ -57,7 +55,6 @@ namespace FileManager
         //  Вывести последнюю директорию
         public void ShowLast()
         {
-            Console.Clear();
             dirCh = new Directory(LastDirect);
             dirCh1 = new ShowWindow(LastDirect);
             dirCh1.Print();
@@ -65,7 +62,6 @@ namespace FileManager
         // Показать ТОЛЬКО ФАЙЛЫ
         public void ShowFiles()
         {
-            Console.Clear();
             dirCh = new Directory(LastDirect);
             dirCh1 = new ShowWindow(LastDirect);
             dirCh1.Print(false, true, false);
@@ -73,7 +69,6 @@ namespace FileManager
         // Показать ТОЛЬКО ПАПКИ
         public void ShowFolders()
         {
-            Console.Clear();
             dirCh = new Directory(LastDirect);
             dirCh1 = new ShowWindow(LastDirect);
             dirCh1.Print(false, false, true);
