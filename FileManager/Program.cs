@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FileManager.Classes;
+using System;
 
 namespace FileManager
 {
@@ -6,7 +7,6 @@ namespace FileManager
     {
         static void Main()
         {
-            Directory obj = new Directory();
             ShowWindow window = new ShowWindow();
             window.Print();
             UserInput();
